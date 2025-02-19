@@ -7,7 +7,7 @@ String dname = request.getParameter("dname");
 String loc = request.getParameter("loc");
 
 String URL = "jdbc:mysql://localhost:3306/spring5fs";
-String sql = "DELETE FROM spring5fs.dept WHERE deptno = "+ deptno;
+String sql = "DELETE FROM spring5fs.emp WHERE deptno = "+ deptno;
 Class.forName("com.mysql.cj.jdbc.Driver");
 
 try (Connection conn = DriverManager.getConnection (URL, "root", "1234");
